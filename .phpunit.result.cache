@@ -1,0 +1,1 @@
+{"version":1,"defects":{"ContactsTest::testFindLanguagesSeparator":7,"ContactsTest::testIsEmptyAndReturn":7},"times":{"ContactsTest::testFindLanguagesSeparator":0.004,"ContactsTest::testIsEmptyAndReturn":0}}

@@ -1,0 +1,170 @@
+body{
+    background-color: beige;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    caret-color: transparent ! important;
+}
+.wrapper{
+    background-color: #4f7d7d3d;
+    display: block;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 11px 16px 8px -1px rgba(0,0,0,0.75);
+    box-shadow: 11px 16px 8px -1px rgba(0,0,0,0.75);
+}
+.dragText{
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    left: calc( 50% - 100px );
+    width: 200px;
+    top: 180px;
+}
+.innerWrapper{
+    padding: 20px;
+}
+.divider{
+    border-top: 1px #0000005e solid;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    position: relative;
+}
+#idDiv1::after{
+    content: '1';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    color: #546899;
+    font-weight: bold;
+}
+#idDiv2::after{
+    content: '2';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    color: #546899;
+    font-weight: bold;
+}
+#idDiv3::after{
+    content: '3';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    color: #546899;
+    font-weight: bold;
+}
+
+.area {
+    height: 400px;
+    position: relative;
+    border: 4px dashed #000;
+    background-image: url("http://kmtlondon.com/img/upload.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    filter: alpha(opacity=50);
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    text-align: center;
+    overflow: hidden;
+}
+
+.area:hover,
+.area.dragging,
+.area.uploading {
+    filter: alpha(opacity=100);
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.area input {
+    width: 400%;
+    height: 100%;
+    margin-left: -300%;
+    border: none;
+    cursor: pointer;
+}
+
+.area input:focus {
+    outline: none;
+}
+.textBoxCl{
+    width:400px;
+    height:30px;
+}
+.uplCl{
+    border: 1px solid #5380b9b0;
+    width: min-content;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    background: #50ff0085;
+    font-weight: bold;
+    -webkit-box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.27);
+    box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.27);
+    cursor:pointer;
+    scale: 1;
+    transition: scale 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+.uplCl:hover{
+    scale: 1.2;
+    color: #fff;
+    background-color: #a48f8f;
+}
+.notificationClass{
+    font-size: 20px;
+    position: fixed;
+    display: block;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    background-color: #002135;
+    top: 0;
+    color: white;
+    padding-top: 74px;
+    padding-bottom: 74px;
+    opacity: 1;
+    z-index: 10;
+    transform: translateY(-500px);
+    transition:transform 0.5s ease;
+}
+
+@media only screen and (max-width: 560px)  {
+    .textBoxCl{
+        width: 200px ! important;
+    }
+}
+.groupClass {
+    width: 96%;
+    left: 2%;
+    position: relative;
+    border: 1px solid #ffffff94;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #84dcff26;
+    -webkit-box-shadow: inset 0px 0px 6px 3px rgba(49,68,93,0.4);
+    box-shadow: inset 0px 0px 6px 3px rgba(49,68,93,0.4);
+}
